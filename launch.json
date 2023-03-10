@@ -11,8 +11,8 @@
       "request": "launch",
       "mode": "auto",
       "program": "${workspaceFolder}/main.go",
-      "output": "${workspaceFolder}/aixc",
-      "args": ["list", "-h"]
+      "output": "${workspaceFolder}/poxy",
+      "args": ["-c", "cfg.example.toml" ]
     }
   ]
 }
