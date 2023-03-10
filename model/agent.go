@@ -2,24 +2,24 @@ package model
 
 import "fmt"
 
-type AgentReportRequest struct {
+type ProxyReportRequest struct {
 	Hostname string
 	IP		 string
-	AgentVersion	string
+	ProxyVersion	string
 	PluginVersion	string
 }
 
-func (res *AgentReportRequest) String() string {
+func (res *ProxyReportRequest) String() string {
 	return fmt.Sprintf(
-		"<Hostname:%s, IP:%s, AgentVersion:%s, PluginVersion:%s>",
+		"<Hostname:%s, IP:%s, ProxyVersion:%s, PluginVersion:%s>",
 		res.Hostname,
 		res.IP,
-		res.AgentVersion,
+		res.ProxyVersion,
 		res.PluginVersion,
 	)
 }
 
-type AgentUpdateInfo struct {
+type ProxyUpdateInfo struct {
 	LastUpdate    int64
-	ReportRequest *AgentReportRequest
+	ReportRequest *ProxyReportRequest
 }
