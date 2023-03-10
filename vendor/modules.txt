@@ -1,0 +1,18 @@
+# github.com/BurntSushi/toml v1.2.1
+## explicit; go 1.16
+github.com/BurntSushi/toml
+github.com/BurntSushi/toml/internal
+# github.com/sirupsen/logrus v1.9.0
+## explicit; go 1.13
+github.com/sirupsen/logrus
+# github.com/toolkits/file v0.0.0-20160325033739-a5b3c5147e07
+## explicit
+github.com/toolkits/file
+# github.com/toolkits/sys v0.0.0-20170615103026-1f33b217ffaf
+## explicit
+github.com/toolkits/sys
+# golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8
+## explicit; go 1.17
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+golang.org/x/sys/windows
