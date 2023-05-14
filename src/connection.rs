@@ -31,7 +31,7 @@ pub async fn process(stream: TcpStream) -> Result<()> {
             let mut client_to_server_stream = TcpStream::connect(&host).await?;
 
             tokio::spawn(async move{
-               if let core::result::Result::Ok((xx, bb)) = tokio::io::copy_bidirectional(&mut w_stream.clone(), &mut client_to_server_stream).await {
+               if let core::result::Result::Ok((_xx, _bb)) = tokio::io::copy_bidirectional(&mut w_stream.clone(), &mut client_to_server_stream).await {
 
                }
             });

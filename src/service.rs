@@ -33,7 +33,7 @@ impl Service<Request<Body>> for ProxyService {
 
     fn poll_ready(
         &mut self,
-        cx: &mut std::task::Context<'_>,
+        _cx: &mut std::task::Context<'_>,
     ) -> std::task::Poll<Result<(), Self::Error>> {
         Poll::Ready(Ok(()))
     }
@@ -58,7 +58,7 @@ impl ProxyService {
     }
     async fn http_proxy(
         self,
-        mut req: Request<Body>,
+        req: Request<Body>,
     ) -> Result<Response<Body>, Box<dyn std::error::Error + Send + Sync>> {
         // let mut connector = HttpConnector::new();
         let client = Client::new();
